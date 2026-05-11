@@ -265,6 +265,6 @@ app.delete("/gst/:id", authRequired, async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("Server Started on 5000");
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Server Running");
 });
